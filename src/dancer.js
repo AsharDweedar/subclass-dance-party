@@ -14,6 +14,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 // makeDancer.prototype.stepTimer = 1000;
 
 makeDancer.prototype.step = function() {
+  console.log(that , 'inside set Position makeDance');
     var that = this;
     setTimeout(function (){
       console.log('l')
@@ -22,12 +23,12 @@ makeDancer.prototype.step = function() {
   
   }
 
- makeDancer.prototype.setPosition = function(top, left) {
+ makeDancer.prototype.setPosition = function() {
   //var that = this;
-  // console.log(that)
+  //console.log(that , 'inside set Position makeDance');
     var styleSettings = {
-      top: top,
-      left: left
+      top: this.top,
+      left: this.left
     };
     this.$node.css(styleSettings);
     return;
