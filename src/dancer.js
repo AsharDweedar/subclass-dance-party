@@ -1,6 +1,5 @@
 var makeDancer = function(top, left, timeBetweenSteps) {
   
-  this.log = console.log(top, left, timeBetweenSteps)
   this.$node = $('<span class="dancer"></span>');
   this.stepTimer = timeBetweenSteps ;
   this.top = top ;
@@ -9,7 +8,6 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 };
 
 makeDancer.prototype.step = function() {
-  console.log(that , 'inside set Position makeDance');
     var that = this;
     setTimeout(function (){
       that.step()

@@ -8,12 +8,10 @@ makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
 
 
 makeBlinkyDancer.prototype.step = function() {
-  console.log('inside step of makeBlinkyDancer')
   this.$node.toggle();
 
   var that = this;
     setTimeout(function (){
-      console.log('l')
       that.step()
       }, that.stepTimer);
   };
