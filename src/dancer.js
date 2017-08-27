@@ -1,6 +1,7 @@
 var makeDancer = function(top, left, timeBetweenSteps) {
   //var dancer = Object.create(makeDancer.prototype);
   // use jQuery to create an HTML <span> tag
+  this.log = console.log(top, left, timeBetweenSteps)
   this.$node = $('<span class="dancer"></span>');
   this.stepTimer = timeBetweenSteps ;
   this.top = top ;
